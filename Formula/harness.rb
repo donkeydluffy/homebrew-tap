@@ -5,20 +5,20 @@
 class Harness < Formula
   desc "用确定性规则约束 AI 编程流程的检查工具"
   homepage "https://github.com/donkeydluffy/harness"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/donkeydluffy/harness/releases/download/v0.1.3/harness_0.1.3_darwin_amd64.tar.gz"
-      sha256 "7249830b306d734fc689ba4ee158ff1a64c8b775c48f4f7d48ae192c7bf826d9"
+      url "https://github.com/donkeydluffy/harness/releases/download/v0.1.4/harness_0.1.4_darwin_amd64.tar.gz"
+      sha256 "00192029b610053b1eb0fbaf719b0e6234b7f31140f9867f6ad5215f19601983"
 
       define_method(:install) do
         bin.install "harness"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/donkeydluffy/harness/releases/download/v0.1.3/harness_0.1.3_darwin_arm64.tar.gz"
-      sha256 "640192a1c833c10f6e3eb5a5bb6410899e7737b7d408f80630d12215165d9b04"
+      url "https://github.com/donkeydluffy/harness/releases/download/v0.1.4/harness_0.1.4_darwin_arm64.tar.gz"
+      sha256 "c821b5dca05f67fe31b455ff5e569cc9d70d499c238a79a1164cb0685a98f6b9"
 
       define_method(:install) do
         bin.install "harness"
@@ -28,15 +28,15 @@ class Harness < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/donkeydluffy/harness/releases/download/v0.1.3/harness_0.1.3_linux_amd64.tar.gz"
-      sha256 "4cc2dd133678e8a9c12fcca0c7d53f310bc46caedf9703429395470804068e37"
+      url "https://github.com/donkeydluffy/harness/releases/download/v0.1.4/harness_0.1.4_linux_amd64.tar.gz"
+      sha256 "ab6d20273d59148e4d7cc3884bbe3ed3803c6300f6051c2181e410c6eb205bf7"
       define_method(:install) do
         bin.install "harness"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/donkeydluffy/harness/releases/download/v0.1.3/harness_0.1.3_linux_arm64.tar.gz"
-      sha256 "1c4bb81f34ed03421fa52cca65ba0bac9eb5a3292d1645bb6e3a19b3972c19ae"
+      url "https://github.com/donkeydluffy/harness/releases/download/v0.1.4/harness_0.1.4_linux_arm64.tar.gz"
+      sha256 "418115eb613e53c115f5a6f84417d81be58eb48d9d7935871d84e9a146df886b"
       define_method(:install) do
         bin.install "harness"
       end
